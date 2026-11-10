@@ -1,0 +1,2307 @@
+{
+  "firstLayout": "",
+  "gdVersion": {
+    "build": 269,
+    "major": 5,
+    "minor": 6,
+    "revision": 0
+  },
+  "properties": {
+    "adaptGameResolutionAtRuntime": false,
+    "antialiasingMode": "MSAA",
+    "antialisingEnabledOnMobile": false,
+    "folderProject": false,
+    "orientation": "landscape",
+    "packageName": "com.alig.wispwarden",
+    "pixelsRounding": false,
+    "projectUuid": "",
+    "scaleMode": "linear",
+    "sizeOnStartupMode": "",
+    "templateSlug": "",
+    "version": "1.0.0",
+    "name": "Wisp Warden",
+    "description": "Keep the last light alive. Turn your shield to block dark shards and let golden motes through to feed the fading wisp. Made for GDevelop BIG Game Jam #10 (theme: Keep It Alive).",
+    "author": "Ali G",
+    "windowWidth": 1280,
+    "windowHeight": 720,
+    "latestCompilationDirectory": "",
+    "maxFPS": 0,
+    "minFPS": 20,
+    "verticalSync": false,
+    "platformSpecificAssets": {},
+    "loadingScreen": {
+      "backgroundColor": 0,
+      "backgroundFadeInDuration": 0.2,
+      "backgroundImageResourceName": "",
+      "gdevelopLogoStyle": "light",
+      "logoAndProgressFadeInDuration": 0.2,
+      "logoAndProgressLogoFadeInDelay": 0,
+      "minDuration": 1.5,
+      "progressBarColor": 16777215,
+      "progressBarHeight": 20,
+      "progressBarMaxWidth": 200,
+      "progressBarMinWidth": 40,
+      "progressBarWidthPercent": 30,
+      "showGDevelopSplash": true,
+      "showProgressBar": true
+    },
+    "watermark": {
+      "placement": "bottom-left",
+      "showWatermark": true
+    },
+    "authorIds": [],
+    "authorUsernames": [],
+    "categories": [],
+    "playableDevices": [],
+    "extensionProperties": [],
+    "platforms": [
+      {
+        "name": "GDevelop JS platform"
+      }
+    ],
+    "currentPlatform": "GDevelop JS platform"
+  },
+  "resources": {
+    "resources": [
+      {
+        "file": "assets/Righteous-Regular.ttf",
+        "kind": "font",
+        "metadata": "",
+        "name": "Righteous-Regular.ttf",
+        "userAdded": true
+      },
+      {
+        "file": "assets/bg.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "bg.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "assets/block.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "block.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": true,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/collect.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "collect.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": true,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/gameover.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "gameover.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": true,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/heartbeat.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "heartbeat.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": true,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/hit.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "hit.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": true,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/lost.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "lost.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": true,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/mote.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "mote.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "assets/music.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "music.mp3",
+        "preloadAsMusic": true,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/ring.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "ring.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "assets/shard.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "shard.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "assets/shield_105.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "shield_105.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "assets/shield_120.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "shield_120.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "assets/shield_78.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "shield_78.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "assets/shield_90.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "shield_90.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "assets/spark.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "spark.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "assets/start.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "start.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": true,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/vignette.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "vignette.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "assets/white.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "white.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "assets/wisp.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "wisp.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "assets/wisp_face.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "wisp_face.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "assets/wisp_face_hurt.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "wisp_face_hurt.png",
+        "smoothed": true,
+        "userAdded": true
+      }
+    ]
+  },
+  "objects": [],
+  "objectsFolderStructure": {
+    "folderName": "__ROOT"
+  },
+  "objectsGroups": [],
+  "variables": [],
+  "layouts": [
+    {
+      "b": 22,
+      "disableInputWhenNotFocused": true,
+      "mangledName": "Game",
+      "name": "Game",
+      "r": 8,
+      "standardSortMethod": true,
+      "stopSoundsOnStartup": true,
+      "title": "",
+      "v": 6,
+      "uiSettings": {},
+      "objectsGroups": [],
+      "variables": [],
+      "instances": [
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Background",
+          "persistentUuid": "5edf4a44-2414-4213-b9b5-784e235caaf4",
+          "width": 0,
+          "x": 640,
+          "y": 360,
+          "zOrder": 0,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Guide",
+          "persistentUuid": "b52c98ef-fd16-46e6-b516-c02c281c0d77",
+          "width": 0,
+          "x": 640,
+          "y": 380,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Embers",
+          "persistentUuid": "0be71e0c-90b5-449d-be16-8a5b0b37e160",
+          "width": 0,
+          "x": 640,
+          "y": 380,
+          "zOrder": 2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Wisp",
+          "persistentUuid": "3b93ff9e-6e1b-433c-b9c1-a3f3608ebb3f",
+          "width": 0,
+          "x": 640,
+          "y": 380,
+          "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "WispFace",
+          "persistentUuid": "d8f762d9-bde2-4d9f-bdad-0122c2c56fe1",
+          "width": 0,
+          "x": 640,
+          "y": 380,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "LifeRing",
+          "persistentUuid": "a69d119a-68a5-4895-832e-c8070cc9601b",
+          "width": 0,
+          "x": 0,
+          "y": 0,
+          "zOrder": 5,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Shield",
+          "persistentUuid": "93330b41-cb62-4d8a-9251-37085f4fef72",
+          "width": 0,
+          "x": 640,
+          "y": 380,
+          "zOrder": 6,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "UI",
+          "name": "Vignette",
+          "persistentUuid": "0ea28521-bd78-4c33-818e-9b080a799e67",
+          "width": 0,
+          "x": 640,
+          "y": 360,
+          "zOrder": 7,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "UI",
+          "name": "Flash",
+          "persistentUuid": "37c31e8e-3ab4-41ae-8ffa-22ff4cea9fd7",
+          "width": 0,
+          "x": 0,
+          "y": 0,
+          "zOrder": 8,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "UI",
+          "name": "TitleText",
+          "persistentUuid": "3d7bf970-e253-438b-a8ec-f93515946a1d",
+          "width": 0,
+          "x": 100,
+          "y": 60,
+          "zOrder": 9,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "UI",
+          "name": "SubText",
+          "persistentUuid": "02f86562-664e-48ed-9eec-8ae98ab0823c",
+          "width": 0,
+          "x": 100,
+          "y": 150,
+          "zOrder": 10,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "UI",
+          "name": "HintText",
+          "persistentUuid": "15a284e8-72ca-4454-8d2f-553ec5d0c895",
+          "width": 0,
+          "x": 100,
+          "y": 560,
+          "zOrder": 11,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "UI",
+          "name": "TapText",
+          "persistentUuid": "503d27a3-d04e-4ac1-bc0a-ab270d245faf",
+          "width": 0,
+          "x": 100,
+          "y": 665,
+          "zOrder": 12,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "UI",
+          "name": "ScoreText",
+          "persistentUuid": "fd6a6cd9-f381-4d54-aa2b-868335896690",
+          "width": 0,
+          "x": 100,
+          "y": 18,
+          "zOrder": 13,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "UI",
+          "name": "BestText",
+          "persistentUuid": "fabd7d94-7cb2-4c36-9f03-ed10dea60d62",
+          "width": 0,
+          "x": 100,
+          "y": 24,
+          "zOrder": 14,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "UI",
+          "name": "ComboText",
+          "persistentUuid": "659d49d3-1d8d-408a-b72c-e14f0b3e3029",
+          "width": 0,
+          "x": 100,
+          "y": 88,
+          "zOrder": 15,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "UI",
+          "name": "BannerText",
+          "persistentUuid": "e01fb1dd-dfce-450c-b8df-40e339908725",
+          "width": 0,
+          "x": 100,
+          "y": 600,
+          "zOrder": 16,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        }
+      ],
+      "objects": [
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "Background",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "bg.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 640,
+                        "y": 360
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "Guide",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "ring.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 180,
+                        "y": 180
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "Wisp",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "wisp.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 128,
+                        "y": 128
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "WispFace",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "Happy",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "wisp_face.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 128,
+                        "y": 128
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Hurt",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "wisp_face_hurt.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 128,
+                        "y": 128
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "Shield",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "W120",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "shield_120.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 180,
+                        "y": 180
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "W105",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "shield_105.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 180,
+                        "y": 180
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "W90",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "shield_90.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 180,
+                        "y": 180
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "W78",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "shield_78.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 180,
+                        "y": 180
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "Shard",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "shard.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 56,
+                        "y": 56
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "Mote",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "mote.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 40,
+                        "y": 40
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "Vignette",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "vignette.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 640,
+                        "y": 360
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "Flash",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "white.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "assetStoreId": "",
+          "name": "LifeRing",
+          "type": "PrimitiveDrawing::Drawer",
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "fillOpacity": 255,
+          "outlineSize": 1,
+          "outlineOpacity": 255,
+          "absoluteCoordinates": true,
+          "clearBetweenFrames": true,
+          "antialiasing": "high",
+          "fillColor": {
+            "r": 255,
+            "g": 255,
+            "b": 255
+          },
+          "outlineColor": {
+            "r": 0,
+            "g": 0,
+            "b": 0
+          }
+        },
+        {
+          "additive": true,
+          "assetStoreId": "",
+          "destroyWhenNoParticles": true,
+          "emitterAngleA": 0,
+          "emitterAngleB": 360,
+          "emitterForceMax": 320,
+          "emitterForceMin": 80,
+          "flow": 4000,
+          "jumpForwardInTimeOnCreation": 0,
+          "maxParticleNb": 40,
+          "name": "BurstDark",
+          "particleAlpha1": 255,
+          "particleAlpha2": 0,
+          "particleAlphaRandomness1": 0,
+          "particleAlphaRandomness2": 0,
+          "particleAngle1": 0,
+          "particleAngle2": 0,
+          "particleAngleRandomness1": 0,
+          "particleAngleRandomness2": 0,
+          "particleBlue1": 200,
+          "particleBlue2": 255,
+          "particleColor1": "255;80;200",
+          "particleColor2": "90;40;255",
+          "particleGravityX": 0,
+          "particleGravityY": 0,
+          "particleGreen1": 80,
+          "particleGreen2": 40,
+          "particleLifeTimeMax": 0.6,
+          "particleLifeTimeMin": 0.25,
+          "particleRed1": 255,
+          "particleRed2": 90,
+          "particleSize1": 90,
+          "particleSize2": 10,
+          "particleSizeRandomness1": 0,
+          "particleSizeRandomness2": 0,
+          "rendererParam1": 24,
+          "rendererParam2": 24,
+          "rendererType": "Quad",
+          "tank": 22,
+          "textureParticleName": "spark.png",
+          "type": "ParticleSystem::ParticleEmitter",
+          "zoneRadius": 4,
+          "variables": [],
+          "effects": [],
+          "behaviors": []
+        },
+        {
+          "additive": true,
+          "assetStoreId": "",
+          "destroyWhenNoParticles": true,
+          "emitterAngleA": 0,
+          "emitterAngleB": 360,
+          "emitterForceMax": 140,
+          "emitterForceMin": 40,
+          "flow": 4000,
+          "jumpForwardInTimeOnCreation": 0,
+          "maxParticleNb": 20,
+          "name": "BurstLost",
+          "particleAlpha1": 255,
+          "particleAlpha2": 0,
+          "particleAlphaRandomness1": 0,
+          "particleAlphaRandomness2": 0,
+          "particleAngle1": 0,
+          "particleAngle2": 0,
+          "particleAngleRandomness1": 0,
+          "particleAngleRandomness2": 0,
+          "particleBlue1": 140,
+          "particleBlue2": 80,
+          "particleColor1": "180;170;140",
+          "particleColor2": "60;60;80",
+          "particleGravityX": 0,
+          "particleGravityY": 0,
+          "particleGreen1": 170,
+          "particleGreen2": 60,
+          "particleLifeTimeMax": 0.45,
+          "particleLifeTimeMin": 0.2,
+          "particleRed1": 180,
+          "particleRed2": 60,
+          "particleSize1": 70,
+          "particleSize2": 5,
+          "particleSizeRandomness1": 0,
+          "particleSizeRandomness2": 0,
+          "rendererParam1": 24,
+          "rendererParam2": 24,
+          "rendererType": "Quad",
+          "tank": 12,
+          "textureParticleName": "spark.png",
+          "type": "ParticleSystem::ParticleEmitter",
+          "zoneRadius": 4,
+          "variables": [],
+          "effects": [],
+          "behaviors": []
+        },
+        {
+          "additive": true,
+          "assetStoreId": "",
+          "destroyWhenNoParticles": true,
+          "emitterAngleA": 0,
+          "emitterAngleB": 360,
+          "emitterForceMax": 380,
+          "emitterForceMin": 120,
+          "flow": 5000,
+          "jumpForwardInTimeOnCreation": 0,
+          "maxParticleNb": 60,
+          "name": "BurstGold",
+          "particleAlpha1": 255,
+          "particleAlpha2": 0,
+          "particleAlphaRandomness1": 0,
+          "particleAlphaRandomness2": 0,
+          "particleAngle1": 0,
+          "particleAngle2": 0,
+          "particleAngleRandomness1": 0,
+          "particleAngleRandomness2": 0,
+          "particleBlue1": 160,
+          "particleBlue2": 40,
+          "particleColor1": "255;240;160",
+          "particleColor2": "255;140;40",
+          "particleGravityX": 0,
+          "particleGravityY": 0,
+          "particleGreen1": 240,
+          "particleGreen2": 140,
+          "particleLifeTimeMax": 0.8,
+          "particleLifeTimeMin": 0.3,
+          "particleRed1": 255,
+          "particleRed2": 255,
+          "particleSize1": 110,
+          "particleSize2": 10,
+          "particleSizeRandomness1": 0,
+          "particleSizeRandomness2": 0,
+          "rendererParam1": 24,
+          "rendererParam2": 24,
+          "rendererType": "Quad",
+          "tank": 34,
+          "textureParticleName": "spark.png",
+          "type": "ParticleSystem::ParticleEmitter",
+          "zoneRadius": 20,
+          "variables": [],
+          "effects": [],
+          "behaviors": []
+        },
+        {
+          "additive": true,
+          "assetStoreId": "",
+          "destroyWhenNoParticles": true,
+          "emitterAngleA": 0,
+          "emitterAngleB": 360,
+          "emitterForceMax": 520,
+          "emitterForceMin": 150,
+          "flow": 6000,
+          "jumpForwardInTimeOnCreation": 0,
+          "maxParticleNb": 70,
+          "name": "BurstHit",
+          "particleAlpha1": 255,
+          "particleAlpha2": 0,
+          "particleAlphaRandomness1": 0,
+          "particleAlphaRandomness2": 0,
+          "particleAngle1": 0,
+          "particleAngle2": 0,
+          "particleAngleRandomness1": 0,
+          "particleAngleRandomness2": 0,
+          "particleBlue1": 110,
+          "particleBlue2": 60,
+          "particleColor1": "255;60;110",
+          "particleColor2": "80;0;60",
+          "particleGravityX": 0,
+          "particleGravityY": 0,
+          "particleGreen1": 60,
+          "particleGreen2": 0,
+          "particleLifeTimeMax": 0.8,
+          "particleLifeTimeMin": 0.3,
+          "particleRed1": 255,
+          "particleRed2": 80,
+          "particleSize1": 120,
+          "particleSize2": 10,
+          "particleSizeRandomness1": 0,
+          "particleSizeRandomness2": 0,
+          "rendererParam1": 24,
+          "rendererParam2": 24,
+          "rendererType": "Quad",
+          "tank": 46,
+          "textureParticleName": "spark.png",
+          "type": "ParticleSystem::ParticleEmitter",
+          "zoneRadius": 10,
+          "variables": [],
+          "effects": [],
+          "behaviors": []
+        },
+        {
+          "additive": true,
+          "assetStoreId": "",
+          "destroyWhenNoParticles": true,
+          "emitterAngleA": 0,
+          "emitterAngleB": 360,
+          "emitterForceMax": 700,
+          "emitterForceMin": 60,
+          "flow": 8000,
+          "jumpForwardInTimeOnCreation": 0,
+          "maxParticleNb": 200,
+          "name": "BurstDeath",
+          "particleAlpha1": 255,
+          "particleAlpha2": 0,
+          "particleAlphaRandomness1": 0,
+          "particleAlphaRandomness2": 0,
+          "particleAngle1": 0,
+          "particleAngle2": 0,
+          "particleAngleRandomness1": 0,
+          "particleAngleRandomness2": 0,
+          "particleBlue1": 220,
+          "particleBlue2": 255,
+          "particleColor1": "255;250;220",
+          "particleColor2": "120;140;255",
+          "particleGravityX": 0,
+          "particleGravityY": 0,
+          "particleGreen1": 250,
+          "particleGreen2": 140,
+          "particleLifeTimeMax": 1.8,
+          "particleLifeTimeMin": 0.6,
+          "particleRed1": 255,
+          "particleRed2": 120,
+          "particleSize1": 150,
+          "particleSize2": 0,
+          "particleSizeRandomness1": 0,
+          "particleSizeRandomness2": 0,
+          "rendererParam1": 24,
+          "rendererParam2": 24,
+          "rendererType": "Quad",
+          "tank": 160,
+          "textureParticleName": "spark.png",
+          "type": "ParticleSystem::ParticleEmitter",
+          "zoneRadius": 10,
+          "variables": [],
+          "effects": [],
+          "behaviors": []
+        },
+        {
+          "additive": true,
+          "assetStoreId": "",
+          "destroyWhenNoParticles": false,
+          "emitterAngleA": 0,
+          "emitterAngleB": 360,
+          "emitterForceMax": 50,
+          "emitterForceMin": 10,
+          "flow": 30,
+          "jumpForwardInTimeOnCreation": 0,
+          "maxParticleNb": 120,
+          "name": "Embers",
+          "particleAlpha1": 255,
+          "particleAlpha2": 0,
+          "particleAlphaRandomness1": 0,
+          "particleAlphaRandomness2": 0,
+          "particleAngle1": 0,
+          "particleAngle2": 0,
+          "particleAngleRandomness1": 0,
+          "particleAngleRandomness2": 0,
+          "particleBlue1": 150,
+          "particleBlue2": 40,
+          "particleColor1": "255;230;150",
+          "particleColor2": "255;90;40",
+          "particleGravityX": 0,
+          "particleGravityY": -60,
+          "particleGreen1": 230,
+          "particleGreen2": 90,
+          "particleLifeTimeMax": 1.8,
+          "particleLifeTimeMin": 0.8,
+          "particleRed1": 255,
+          "particleRed2": 255,
+          "particleSize1": 120,
+          "particleSize2": 0,
+          "particleSizeRandomness1": 0,
+          "particleSizeRandomness2": 0,
+          "rendererParam1": 24,
+          "rendererParam2": 24,
+          "rendererType": "Quad",
+          "tank": -1,
+          "textureParticleName": "spark.png",
+          "type": "ParticleSystem::ParticleEmitter",
+          "zoneRadius": 26,
+          "variables": [],
+          "effects": [],
+          "behaviors": []
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "TitleText",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "TitleText",
+          "font": "Righteous-Regular.ttf",
+          "textAlignment": "center",
+          "characterSize": 92,
+          "color": {
+            "b": 130,
+            "g": 222,
+            "r": 255
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": true,
+            "isShadowEnabled": true,
+            "italic": false,
+            "outlineColor": "18;8;40",
+            "outlineThickness": 8,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 4,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 140,
+            "smoothed": true,
+            "underlined": false,
+            "text": "TitleText",
+            "font": "Righteous-Regular.ttf",
+            "textAlignment": "center",
+            "verticalTextAlignment": "top",
+            "characterSize": 92,
+            "lineHeight": 0,
+            "color": "255;222;130"
+          }
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "SubText",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "SubText",
+          "font": "Righteous-Regular.ttf",
+          "textAlignment": "center",
+          "characterSize": 30,
+          "color": {
+            "b": 255,
+            "g": 220,
+            "r": 220
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": true,
+            "isShadowEnabled": true,
+            "italic": false,
+            "outlineColor": "18;8;40",
+            "outlineThickness": 3,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 4,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 140,
+            "smoothed": true,
+            "underlined": false,
+            "text": "SubText",
+            "font": "Righteous-Regular.ttf",
+            "textAlignment": "center",
+            "verticalTextAlignment": "top",
+            "characterSize": 30,
+            "lineHeight": 0,
+            "color": "220;220;255"
+          }
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "HintText",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "HintText",
+          "font": "Righteous-Regular.ttf",
+          "textAlignment": "center",
+          "characterSize": 26,
+          "color": {
+            "b": 255,
+            "g": 210,
+            "r": 200
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": true,
+            "isShadowEnabled": true,
+            "italic": false,
+            "outlineColor": "18;8;40",
+            "outlineThickness": 3,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 4,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 140,
+            "smoothed": true,
+            "underlined": false,
+            "text": "HintText",
+            "font": "Righteous-Regular.ttf",
+            "textAlignment": "center",
+            "verticalTextAlignment": "top",
+            "characterSize": 26,
+            "lineHeight": 0,
+            "color": "200;210;255"
+          }
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "TapText",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "TapText",
+          "font": "Righteous-Regular.ttf",
+          "textAlignment": "center",
+          "characterSize": 34,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": true,
+            "isShadowEnabled": true,
+            "italic": false,
+            "outlineColor": "18;8;40",
+            "outlineThickness": 3,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 4,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 140,
+            "smoothed": true,
+            "underlined": false,
+            "text": "TapText",
+            "font": "Righteous-Regular.ttf",
+            "textAlignment": "center",
+            "verticalTextAlignment": "top",
+            "characterSize": 34,
+            "lineHeight": 0,
+            "color": "255;255;255"
+          }
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "ScoreText",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "ScoreText",
+          "font": "Righteous-Regular.ttf",
+          "textAlignment": "center",
+          "characterSize": 60,
+          "color": {
+            "b": 200,
+            "g": 240,
+            "r": 255
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": true,
+            "isShadowEnabled": true,
+            "italic": false,
+            "outlineColor": "18;8;40",
+            "outlineThickness": 5,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 4,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 140,
+            "smoothed": true,
+            "underlined": false,
+            "text": "ScoreText",
+            "font": "Righteous-Regular.ttf",
+            "textAlignment": "center",
+            "verticalTextAlignment": "top",
+            "characterSize": 60,
+            "lineHeight": 0,
+            "color": "255;240;200"
+          }
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "BestText",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "BestText",
+          "font": "Righteous-Regular.ttf",
+          "textAlignment": "center",
+          "characterSize": 28,
+          "color": {
+            "b": 255,
+            "g": 200,
+            "r": 190
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": true,
+            "isShadowEnabled": true,
+            "italic": false,
+            "outlineColor": "18;8;40",
+            "outlineThickness": 3,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 4,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 140,
+            "smoothed": true,
+            "underlined": false,
+            "text": "BestText",
+            "font": "Righteous-Regular.ttf",
+            "textAlignment": "center",
+            "verticalTextAlignment": "top",
+            "characterSize": 28,
+            "lineHeight": 0,
+            "color": "190;200;255"
+          }
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "ComboText",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "ComboText",
+          "font": "Righteous-Regular.ttf",
+          "textAlignment": "center",
+          "characterSize": 28,
+          "color": {
+            "b": 90,
+            "g": 200,
+            "r": 255
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": true,
+            "isShadowEnabled": true,
+            "italic": false,
+            "outlineColor": "18;8;40",
+            "outlineThickness": 3,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 4,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 140,
+            "smoothed": true,
+            "underlined": false,
+            "text": "ComboText",
+            "font": "Righteous-Regular.ttf",
+            "textAlignment": "center",
+            "verticalTextAlignment": "top",
+            "characterSize": 28,
+            "lineHeight": 0,
+            "color": "255;200;90"
+          }
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "BannerText",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "BannerText",
+          "font": "Righteous-Regular.ttf",
+          "textAlignment": "center",
+          "characterSize": 34,
+          "color": {
+            "b": 255,
+            "g": 230,
+            "r": 160
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": true,
+            "isShadowEnabled": true,
+            "italic": false,
+            "outlineColor": "18;8;40",
+            "outlineThickness": 3,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 4,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 140,
+            "smoothed": true,
+            "underlined": false,
+            "text": "BannerText",
+            "font": "Righteous-Regular.ttf",
+            "textAlignment": "center",
+            "verticalTextAlignment": "top",
+            "characterSize": 34,
+            "lineHeight": 0,
+            "color": "160;230;255"
+          }
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "FloatText",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "FloatText",
+          "font": "Righteous-Regular.ttf",
+          "textAlignment": "center",
+          "characterSize": 34,
+          "color": {
+            "b": 120,
+            "g": 220,
+            "r": 255
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": true,
+            "isShadowEnabled": true,
+            "italic": false,
+            "outlineColor": "18;8;40",
+            "outlineThickness": 3,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 4,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 140,
+            "smoothed": true,
+            "underlined": false,
+            "text": "FloatText",
+            "font": "Righteous-Regular.ttf",
+            "textAlignment": "center",
+            "verticalTextAlignment": "top",
+            "characterSize": 34,
+            "lineHeight": 0,
+            "color": "255;220;120"
+          }
+        }
+      ],
+      "objectsFolderStructure": {
+        "folderName": "__ROOT",
+        "children": [
+          {
+            "objectName": "Background"
+          },
+          {
+            "objectName": "Guide"
+          },
+          {
+            "objectName": "Wisp"
+          },
+          {
+            "objectName": "WispFace"
+          },
+          {
+            "objectName": "Shield"
+          },
+          {
+            "objectName": "Shard"
+          },
+          {
+            "objectName": "Mote"
+          },
+          {
+            "objectName": "Vignette"
+          },
+          {
+            "objectName": "Flash"
+          },
+          {
+            "objectName": "LifeRing"
+          },
+          {
+            "objectName": "BurstDark"
+          },
+          {
+            "objectName": "BurstLost"
+          },
+          {
+            "objectName": "BurstGold"
+          },
+          {
+            "objectName": "BurstHit"
+          },
+          {
+            "objectName": "BurstDeath"
+          },
+          {
+            "objectName": "Embers"
+          },
+          {
+            "objectName": "TitleText"
+          },
+          {
+            "objectName": "SubText"
+          },
+          {
+            "objectName": "HintText"
+          },
+          {
+            "objectName": "TapText"
+          },
+          {
+            "objectName": "ScoreText"
+          },
+          {
+            "objectName": "BestText"
+          },
+          {
+            "objectName": "ComboText"
+          },
+          {
+            "objectName": "BannerText"
+          },
+          {
+            "objectName": "FloatText"
+          }
+        ]
+      },
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "WISP WARDEN - GDevelop BIG Game Jam #10, theme \"Keep It Alive\".\nTurn the shield (mouse/touch/arrow keys) to block dark shards and let gold motes reach the wisp. The wisp's light fades over time; gold refills it."
+        },
+        {
+          "colorB": 160,
+          "colorG": 90,
+          "colorR": 70,
+          "creationTime": 0,
+          "name": "Setup",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "DepartScene"
+                  },
+                  "parameters": [
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SceneBackground"
+                  },
+                  "parameters": [
+                    "",
+                    "8;6;22"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ChangePlan"
+                  },
+                  "parameters": [
+                    "Shard",
+                    "=",
+                    "20"
+                  ]
+                }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::JsCode",
+                  "inlineCode": [
+                    "// Wisp Warden - scene setup. All tunable values live here.",
+                    "const G = {",
+                    "  CX: 640, CY: 380, R: 150, SPAWN_R: 780, WISP_R: 40,",
+                    "  state: \"title\", t: 0, life: 100, score: 0, best: 0, combo: 0, bestCombo: 0,",
+                    "  shieldA: -90, target: -90, shieldW: 120, spawnT: 1.2, ents: [], fx: [],",
+                    "  shake: 0, flash: 0, flashColor: \"255;255;255\", hurt: 0, pulse: 0, heartT: 0,",
+                    "  prevDown: false, prevMX: -1, prevMY: -1, stateT: 0, newBest: false,",
+                    "  banner: \"\", bannerT: 0, milestone: 0, blocked: 0, saved: 0, shieldKick: 0,",
+                    "};",
+                    "try { G.best = parseInt(localStorage.getItem(\"wispwarden_best\") || \"0\", 10) || 0; } catch (e) {}",
+                    "runtimeScene.__G = G;",
+                    "const flash = runtimeScene.getObjects(\"Flash\")[0];",
+                    "flash.setWidth(1280); flash.setHeight(720); flash.setOpacity(0);",
+                    "",
+                    "// Exposed for automated playtesting.",
+                    "if (typeof window !== \"undefined\") window.__wwScene = runtimeScene;",
+                    ""
+                  ],
+                  "parameterObjects": "",
+                  "useStrict": true,
+                  "eventsSheetExpanded": true
+                }
+              ]
+            }
+          ],
+          "parameters": []
+        },
+        {
+          "colorB": 70,
+          "colorG": 90,
+          "colorR": 160,
+          "creationTime": 0,
+          "name": "Game loop",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "Input, spawn director, collisions, juice (particles, screen shake, flashes, sounds) and UI."
+            },
+            {
+              "type": "BuiltinCommonInstructions::JsCode",
+              "inlineCode": [
+                "// Wisp Warden - main loop: input, spawning director, collisions, juice and UI.",
+                "const G = runtimeScene.__G;",
+                "if (!G) return;",
+                "const dt = Math.min(0.05, gdjs.evtTools.runtimeScene.getElapsedTimeInSeconds(runtimeScene));",
+                "const im = runtimeScene.getGame().getInputManager();",
+                "const uiLayer = runtimeScene.getLayer(\"UI\");",
+                "const baseLayer = runtimeScene.getLayer(\"\");",
+                "const one = (n) => runtimeScene.getObjects(n)[0];",
+                "const wisp = one(\"Wisp\"), face = one(\"WispFace\"), shield = one(\"Shield\"), ring = one(\"LifeRing\");",
+                "const embers = one(\"Embers\"), flash = one(\"Flash\"), vig = one(\"Vignette\"), guide = one(\"Guide\");",
+                "const T = { title: one(\"TitleText\"), sub: one(\"SubText\"), hint: one(\"HintText\"), tap: one(\"TapText\"),",
+                "  score: one(\"ScoreText\"), best: one(\"BestText\"), combo: one(\"ComboText\"), banner: one(\"BannerText\") };",
+                "const snd = (f, v, p) => gdjs.evtTools.sound.playSound(runtimeScene, f, false, v, p || 1);",
+                "const wrap = (a) => { a = (a + 180) % 360; if (a < 0) a += 360; return a - 180; };",
+                "const rnd = (a, b) => a + Math.random() * (b - a);",
+                "const center = (o, x, y) => { o.setX(x - o.getWidth() / 2); o.setY(y); };",
+                "const burst = (name, x, y, layer) => { const b = runtimeScene.createObject(name); if (b) { b.setPosition(x, y); if (layer) b.setLayer(layer); } return b; };",
+                "const floatText = (txt, x, y, color, size) => {",
+                "  const o = runtimeScene.createObject(\"FloatText\"); if (!o) return;",
+                "  o.setLayer(\"UI\"); o.setText(txt); o.setColor(color); o.setCharacterSize(size || 34);",
+                "  G.fx.push({ o, x, y, t: 0, life: 0.9 });",
+                "};",
+                "const { CX, CY, R } = G;",
+                "",
+                "// ---------- Input ----------",
+                "const [mx, my] = uiLayer.convertCoords(im.getCursorX(), im.getCursorY());",
+                "const down = im.isMouseButtonPressed(0);",
+                "const keyStart = im.isKeyPressed(32) || im.isKeyPressed(13);",
+                "const tapped = im.isMouseButtonReleased(0) || (keyStart && !G.prevKey);",
+                "G.prevDown = down; G.prevKey = keyStart;",
+                "const moved = Math.abs(mx - G.prevMX) + Math.abs(my - G.prevMY) > 0.5;",
+                "G.prevMX = mx; G.prevMY = my;",
+                "if ((moved || down) && Math.hypot(mx - CX, my - CY) > 12) G.target = Math.atan2(my - CY, mx - CX) * 180 / Math.PI;",
+                "const kl = im.isKeyPressed(37) || im.isKeyPressed(65) || im.isKeyPressed(81);",
+                "const kr = im.isKeyPressed(39) || im.isKeyPressed(68);",
+                "if (kl) G.target = G.shieldA - 40; if (kr) G.target = G.shieldA + 40;",
+                "",
+                "// ---------- State machine ----------",
+                "G.stateT += dt;",
+                "const startRun = () => {",
+                "  for (const e of G.ents) e.o.deleteFromScene(runtimeScene);",
+                "  G.ents = []; G.state = \"play\"; G.t = 0; G.life = 100; G.score = 0; G.combo = 0; G.bestCombo = 0;",
+                "  G.spawnT = 1.0; G.stateT = 0; G.newBest = false; G.milestone = 0; G.blocked = 0; G.saved = 0; G.hits = 0; G.lost = 0;",
+                "  G.flash = 120; G.flashColor = \"255;240;200\";",
+                "  snd(\"start.mp3\", 70);",
+                "  if (!G.musicOn) { gdjs.evtTools.sound.playMusic(runtimeScene, \"music.mp3\", true, 45, 1); G.musicOn = true; }",
+                "  G.banner = \"Keep it alive!\"; G.bannerT = 2.2;",
+                "};",
+                "if (G.state === \"title\" && tapped) startRun();",
+                "else if (G.state === \"over\" && tapped && G.stateT > 0.8) startRun();",
+                "",
+                "const playing = G.state === \"play\";",
+                "if (playing) {",
+                "  G.t += dt;",
+                "  const t = G.t;",
+                "  // difficulty curve: a typical run lasts 1-3 minutes",
+                "  const decay = Math.min(8, 2.4 + t * 0.032);",
+                "  G.life -= decay * dt;",
+                "  G.score += dt * 10;",
+                "  G.shieldW = t < 40 ? 120 : t < 80 ? 105 : t < 120 ? 90 : 78;",
+                "  const anim = { 120: 0, 105: 1, 90: 2, 78: 3 }[G.shieldW];",
+                "  if (shield.getAnimation() !== anim) { shield.setAnimation(anim); G.shieldKick = 0.3; if (t > 1) { G.banner = \"Your shield is shrinking...\"; G.bannerT = 2; } }",
+                "  const milestones = [[20, \"The dark grows restless\"], [35, \"Shards are spiralling!\"], [60, \"They come in pairs now\"], [90, \"Swarm incoming!\"], [120, \"Legendary warden!\"], [160, \"How is it still alive?!\"]];",
+                "  if (G.milestone < milestones.length && t >= milestones[G.milestone][0]) { G.banner = milestones[G.milestone][1]; G.bannerT = 2.4; G.milestone++; }",
+                "",
+                "  // ---------- Spawn director ----------",
+                "  G.spawnT -= dt;",
+                "  if (G.spawnT <= 0) {",
+                "    G.spawnT = Math.max(0.36, 1.2 - t * 0.0085) * rnd(0.8, 1.2);",
+                "    const sv = Math.min(390, 150 + t * 2.1), mv = Math.min(270, 130 + t * 1.1);",
+                "    // add(kind, angle, arrival time in seconds until it reaches the shield ring)",
+                "    const add = (kind, a, arrive, extra) => {",
+                "      const o = runtimeScene.createObject(kind === \"shard\" ? \"Shard\" : \"Mote\");",
+                "      const e = Object.assign({ o, kind, a, v: kind === \"shard\" ? sv : mv, w: 0, pr: 9999 }, extra || {});",
+                "      e.r = R + e.v * arrive;",
+                "      o.setPosition(CX + Math.cos(e.a * Math.PI / 180) * e.r, CY + Math.sin(e.a * Math.PI / 180) * e.r);",
+                "      G.ents.push(e);",
+                "    };",
+                "    const A = (G.SPAWN_R - R) / mv; // slowest speed sets the shared arrival time, so everything spawns off-screen",
+                "    const a = rnd(-180, 180), roll = Math.random();",
+                "    const moteChance = G.life < 35 ? 0.45 : t < 20 ? 0.4 : 0.32;",
+                "    if (roll < moteChance) add(\"mote\", a, A);",
+                "    else if (t > 60 && roll < moteChance + 0.18) { add(\"mote\", a, A); add(\"shard\", a + rnd(-8, 8), A + 0.6); } // trojan: gold first, dark right behind",
+                "    else if (t > 35 && roll < moteChance + 0.34) add(\"shard\", a, A, { w: (Math.random() < 0.5 ? -1 : 1) * rnd(20, 45) }); // spiral",
+                "    else if (t > 90 && roll < moteChance + 0.46) { for (let k = -1; k <= 1; k++) add(\"shard\", a + k * 34, A); } // swarm fan",
+                "    else if (t > 15 && roll < moteChance + 0.58) { add(\"shard\", a, A); add(\"shard\", a + 180 + rnd(-30, 30), A + Math.max(0.55, 0.85 - t * 0.002)); } // pincer",
+                "    else add(\"shard\", a, (G.SPAWN_R - R) / sv);",
+                "    if (G.spawnT < 0.9 && roll >= moteChance) G.spawnT += 0.25; // breathing room after combos",
+                "  }",
+                "",
+                "  // ---------- Shield ----------",
+                "  const diff = wrap(G.target - G.shieldA);",
+                "  const step = 760 * dt;",
+                "  G.shieldA += Math.max(-step, Math.min(step, diff));",
+                "  G.shieldA = wrap(G.shieldA);",
+                "}",
+                "",
+                "// ---------- Entities ----------",
+                "const wispR = G.WISP_R * (0.75 + 0.45 * Math.max(0, G.life) / 100);",
+                "for (let i = G.ents.length - 1; i >= 0; i--) {",
+                "  const e = G.ents[i];",
+                "  if (playing) { e.pr = e.r; e.r -= e.v * dt; e.a += e.w * dt; }",
+                "  const rad = e.a * Math.PI / 180;",
+                "  const x = CX + Math.cos(rad) * e.r, y = CY + Math.sin(rad) * e.r;",
+                "  e.o.setPosition(x, y);",
+                "  if (e.kind === \"shard\") e.o.setAngle(e.a + 180 + e.w * 0.5); else { const s = 0.9 + 0.15 * Math.sin(G.t * 10 + i); e.o.setScale(s); }",
+                "  if (!playing) continue;",
+                "  let remove = false;",
+                "  const halfW = G.shieldW / 2 + (e.kind === \"shard\" ? 7 : 4);",
+                "  if (e.pr > R + 8 && e.r <= R + 8 && Math.abs(wrap(e.a - G.shieldA)) <= halfW) {",
+                "    remove = true;",
+                "    if (e.kind === \"shard\") {",
+                "      burst(\"BurstDark\", x, y); snd(\"block.mp3\", 55, rnd(0.9, 1.25));",
+                "      G.score += 5; G.blocked++; G.shieldKick = 0.18; G.shake = Math.max(G.shake, 4);",
+                "    } else {",
+                "      burst(\"BurstLost\", x, y); snd(\"lost.mp3\", 60, 1); G.lost = (G.lost || 0) + 1;",
+                "      if (G.combo >= 3) floatText(\"combo lost\", x, y - 20, \"190;190;220\", 26);",
+                "      G.combo = 0;",
+                "    }",
+                "  } else if (e.r <= wispR + 6) {",
+                "    remove = true;",
+                "    if (e.kind === \"shard\") {",
+                "      G.life -= 22; G.hits = (G.hits || 0) + 1; G.combo = 0; G.hurt = 0.6; G.shake = 22; G.flash = 150; G.flashColor = \"255;40;90\";",
+                "      burst(\"BurstHit\", CX, CY); snd(\"hit.mp3\", 90, rnd(0.9, 1.05));",
+                "      floatText(\"-22\", CX + rnd(-30, 30), CY - 80, \"255;90;140\", 40);",
+                "    } else {",
+                "      G.combo++; G.bestCombo = Math.max(G.bestCombo, G.combo); G.saved++;",
+                "      const gain = 10 * G.combo;",
+                "      G.life = Math.min(100, G.life + 15); G.score += gain; G.pulse = 0.35;",
+                "      burst(\"BurstGold\", CX, CY); snd(\"collect.mp3\", 60, Math.min(2, 1 + (G.combo - 1) * 0.06));",
+                "      floatText(\"+\" + gain + (G.combo > 1 ? \"  x\" + G.combo : \"\"), CX + rnd(-40, 40), CY - 90, \"255;220;120\", G.combo > 4 ? 44 : 36);",
+                "    }",
+                "  }",
+                "  if (remove) { e.o.deleteFromScene(runtimeScene); G.ents.splice(i, 1); }",
+                "}",
+                "",
+                "// ---------- Death ----------",
+                "if (playing && G.life <= 0) {",
+                "  G.life = 0; G.state = \"over\"; G.stateT = 0;",
+                "  burst(\"BurstDeath\", CX, CY); snd(\"gameover.mp3\", 80); G.shake = 30; G.flash = 200; G.flashColor = \"255;255;255\";",
+                "  const s = Math.floor(G.score);",
+                "  if (s > G.best) { G.best = s; G.newBest = true; try { localStorage.setItem(\"wispwarden_best\", String(s)); } catch (e) {} }",
+                "  for (const e of G.ents) { burst(\"BurstDark\", e.o.getX(), e.o.getY()); e.o.deleteFromScene(runtimeScene); }",
+                "  G.ents = [];",
+                "}",
+                "",
+                "// ---------- Wisp & life ring ----------",
+                "const lf = Math.max(0, G.life) / 100;",
+                "G.pulse = Math.max(0, G.pulse - dt * 1.2); G.hurt = Math.max(0, G.hurt - dt);",
+                "const breathe = 1 + 0.05 * Math.sin(G.stateT * (playing ? 3 + (1 - lf) * 5 : 2));",
+                "const dead = G.state === \"over\";",
+                "const sc = dead ? Math.max(0.05, 0.4 - G.stateT * 0.5) : (0.45 + 0.4 * lf + G.pulse) * breathe;",
+                "wisp.setScale(sc); face.setScale(sc);",
+                "const lerp = (a, b, k) => Math.round(a + (b - a) * k);",
+                "const col = [lerp(110, 255, lf), lerp(150, 225, lf), lerp(255, 150, lf)];",
+                "wisp.setColor(G.hurt > 0 ? \"255;120;150\" : col.join(\";\"));",
+                "wisp.setOpacity(dead ? 60 : 140 + 115 * lf);",
+                "face.setAnimation(G.hurt > 0 || lf < 0.25 ? 1 : 0); face.setOpacity(dead ? 0 : 255);",
+                "ring.clear();",
+                "if (!dead && G.state !== \"title\") {",
+                "  ring.setOutlineSize(6); ring.setFillOpacity(0);",
+                "  ring.setOutlineColor(\"70;60;120\"); ring.setOutlineOpacity(120); ring.drawCircle(CX, CY, 92);",
+                "  const low = lf < 0.3;",
+                "  ring.setOutlineColor(low ? (Math.sin(G.t * 12) > 0 ? \"255;70;110\" : \"255;160;90\") : \"255;214;110\");",
+                "  ring.setOutlineOpacity(255);",
+                "  if (lf > 0.002) ring.drawArc(CX, CY, 92, -90, -90 + 360 * lf, false, false);",
+                "}",
+                "embers.setFlow(dead ? 0 : 6 + 26 * lf);",
+                "embers.setPosition(CX, CY);",
+                "// heartbeat when the light is about to go out",
+                "if (playing && lf < 0.3) { G.heartT -= dt; if (G.heartT <= 0) { snd(\"heartbeat.mp3\", 80); G.heartT = 0.55 + lf * 1.5; G.pulse = Math.max(G.pulse, 0.08); } }",
+                "vig.setColor(playing && lf < 0.3 ? \"255;\" + lerp(20, 255, lf / 0.3) + \";\" + lerp(60, 255, lf / 0.3) : \"255;255;255\");",
+                "",
+                "// ---------- Shield visuals ----------",
+                "G.shieldKick = Math.max(0, G.shieldKick - dt);",
+                "shield.setAngle(G.shieldA);",
+                "shield.setScale(1 + G.shieldKick * 0.25);",
+                "shield.setOpacity(G.state === \"play\" ? 255 : G.state === \"title\" ? 200 : 70);",
+                "if (G.state === \"title\") { G.shieldA = wrap(G.shieldA + dt * 60); G.target = G.shieldA; }",
+                "guide.setAngle(guide.getAngle() + dt * 6);",
+                "",
+                "// ---------- Screen shake & flash ----------",
+                "G.shake = Math.max(0, G.shake - dt * 60);",
+                "baseLayer.setCameraX(640 + rnd(-1, 1) * G.shake);",
+                "baseLayer.setCameraY(360 + rnd(-1, 1) * G.shake);",
+                "G.flash = Math.max(0, G.flash - dt * 420);",
+                "flash.setColor(G.flashColor); flash.setOpacity(G.flash);",
+                "",
+                "// ---------- Floating texts ----------",
+                "for (let i = G.fx.length - 1; i >= 0; i--) {",
+                "  const f = G.fx[i]; f.t += dt; const k = f.t / f.life;",
+                "  f.o.setOpacity(255 * (1 - k * k));",
+                "  center(f.o, f.x, f.y - 60 * Math.sqrt(k));",
+                "  if (k >= 1) { f.o.deleteFromScene(runtimeScene); G.fx.splice(i, 1); }",
+                "}",
+                "",
+                "// ---------- UI ----------",
+                "const show = (o, v) => o.hide(!v);",
+                "const blink = 140 + 115 * Math.abs(Math.sin(G.stateT * 2.5));",
+                "if (G.state === \"title\") {",
+                "  show(T.title, true); show(T.sub, true); show(T.hint, true); show(T.tap, true); show(T.score, false); show(T.combo, false);",
+                "  T.title.setText(\"WISP WARDEN\"); T.sub.setText(\"The last light in the dark is in your hands. Keep it alive.\");",
+                "  T.hint.setText(\"Move or drag to turn the shield\\nBLOCK the dark shards  -  LET the gold motes in\\nThe light fades on its own: feed it gold!\");",
+                "  T.tap.setText(\"Click, tap or press Space to start\"); T.tap.setOpacity(blink);",
+                "  center(T.title, CX, 60); center(T.sub, CX, 168); center(T.hint, CX, 560); center(T.tap, CX, 665);",
+                "} else if (G.state === \"play\") {",
+                "  show(T.title, false); show(T.sub, false); show(T.hint, false); show(T.tap, false); show(T.score, true);",
+                "  T.score.setText(String(Math.floor(G.score))); center(T.score, CX, 18);",
+                "  show(T.combo, G.combo > 1); T.combo.setText(\"Gold streak x\" + G.combo); center(T.combo, CX, 88);",
+                "} else {",
+                "  show(T.title, G.stateT > 0.6); show(T.sub, G.stateT > 0.6); show(T.hint, G.stateT > 0.6); show(T.tap, G.stateT > 0.8); show(T.combo, false); show(T.score, true);",
+                "  T.title.setText(\"THE LIGHT FADED\");",
+                "  T.score.setText(String(Math.floor(G.score))); center(T.score, CX, 18);",
+                "  T.sub.setText(G.newBest ? \"NEW BEST!  \" + Math.floor(G.score) : \"Score \" + Math.floor(G.score) + \"   -   Best \" + G.best);",
+                "  T.sub.setColor(G.newBest ? (Math.sin(G.stateT * 8) > 0 ? \"255;230;120\" : \"255;150;200\") : \"220;220;255\");",
+                "  T.hint.setText(\"Survived \" + G.t.toFixed(1) + \"s   -   \" + G.blocked + \" shards blocked   -   \" + G.saved + \" gold caught   -   best streak x\" + G.bestCombo);",
+                "  T.tap.setText(\"Click or tap to try again\"); T.tap.setOpacity(blink);",
+                "  center(T.title, CX, 90); center(T.sub, CX, 215); center(T.hint, CX, 560); center(T.tap, CX, 640);",
+                "}",
+                "T.best.setText(\"BEST \" + G.best); T.best.setX(1280 - T.best.getWidth() - 24); T.best.setY(24);",
+                "G.bannerT = Math.max(0, G.bannerT - dt);",
+                "show(T.banner, G.bannerT > 0 && G.state === \"play\");",
+                "T.banner.setText(G.banner); T.banner.setOpacity(255 * Math.min(1, G.bannerT * 2)); center(T.banner, CX, 600);",
+                ""
+              ],
+              "parameterObjects": "",
+              "useStrict": true,
+              "eventsSheetExpanded": true
+            }
+          ],
+          "parameters": []
+        },
+        {
+          "colorB": 90,
+          "colorG": 150,
+          "colorR": 70,
+          "creationTime": 0,
+          "name": "Draw order",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ChangePlan"
+                  },
+                  "parameters": [
+                    "Shard",
+                    "=",
+                    "20"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ChangePlan"
+                  },
+                  "parameters": [
+                    "Mote",
+                    "=",
+                    "20"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ChangePlan"
+                  },
+                  "parameters": [
+                    "BurstDark",
+                    "=",
+                    "30"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ChangePlan"
+                  },
+                  "parameters": [
+                    "BurstGold",
+                    "=",
+                    "30"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ChangePlan"
+                  },
+                  "parameters": [
+                    "BurstHit",
+                    "=",
+                    "30"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ChangePlan"
+                  },
+                  "parameters": [
+                    "BurstDeath",
+                    "=",
+                    "30"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ChangePlan"
+                  },
+                  "parameters": [
+                    "BurstLost",
+                    "=",
+                    "30"
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": []
+        }
+      ],
+      "layers": [
+        {
+          "ambientLightColorB": 200,
+          "ambientLightColorG": 200,
+          "ambientLightColorR": 200,
+          "camera2DPlaneMaxDrawingDistance": 5000,
+          "camera3DFarPlaneDistance": 10000,
+          "camera3DFieldOfView": 45,
+          "camera3DNearPlaneDistance": 3,
+          "cameraType": "",
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "isLocked": false,
+          "name": "",
+          "renderingType": "",
+          "visibility": true,
+          "cameras": [
+            {
+              "defaultSize": true,
+              "defaultViewport": true,
+              "height": 0,
+              "viewportBottom": 1,
+              "viewportLeft": 0,
+              "viewportRight": 1,
+              "viewportTop": 0,
+              "width": 0
+            }
+          ],
+          "effects": []
+        },
+        {
+          "ambientLightColorB": 200,
+          "ambientLightColorG": 200,
+          "ambientLightColorR": 200,
+          "camera2DPlaneMaxDrawingDistance": 5000,
+          "camera3DFarPlaneDistance": 10000,
+          "camera3DFieldOfView": 45,
+          "camera3DNearPlaneDistance": 3,
+          "cameraType": "",
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "isLocked": false,
+          "name": "UI",
+          "renderingType": "",
+          "visibility": true,
+          "cameras": [],
+          "effects": []
+        }
+      ],
+      "behaviorsSharedData": []
+    }
+  ],
+  "externalEvents": [],
+  "eventsFunctionsExtensions": [],
+  "externalLayouts": []
+}
